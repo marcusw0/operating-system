@@ -1,0 +1,15 @@
+# Zig build artifacts and deps
+.zig-cache/
+zig-out/
+zig-pkg/
+
+# Other
+/disk/*
+!/disk/.gitkeep
+*.map
+*.tar
+*.o
+*.elf
+*.bin
+*.log
+*.pcap
