@@ -15,6 +15,7 @@ pub fn build(b: *std.Build) void {
         }),
     });
 
+    exe.entry = .{ .symbol_name = "boot"};
     exe.setLinkerScript(b.path("src/kernel.ld"));
 
     b.installArtifact(exe);
